@@ -161,6 +161,7 @@ body {
   --navbar-text: var(--gray3);
 
   --circle-linear: rgb(44, 43, 43), rgb(255, 255, 255);
+  transition: 2s;
 }
 
 
@@ -176,9 +177,9 @@ body {
   --bg: rgba(26, 25, 25, 0.5);
   --box-shadow: rgba(255, 255, 255, 0.15);
 
-  --navbar-text: var(--gray5);
-
+  --navbar-text: var(--gray3);
   --circle-linear: rgb(163, 159, 159), rgb(255, 255, 255);
+  transition: 2s;
 }
 
 .blue {
@@ -196,6 +197,7 @@ body {
   --navbar-text: var(--gray6);
 
   --circle-linear: rgb(74, 222, 222), rgb(221, 223, 235);
+  transition: 2s;
 }
 
 
