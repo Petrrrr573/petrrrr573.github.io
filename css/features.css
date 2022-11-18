@@ -2,10 +2,6 @@
   margin: 4rem 0;
 }
 
-.feature h3 {
-  color: rgb(0, 17, 253);
-}
-
 .feature .content {
   position: relative;
 }
@@ -20,9 +16,16 @@
 
 .content h2 {
   font-size: 2rem;
+  font-size: clamp(1.5rem,8vw, 2.25rem);
 }
 
-.content h2, h3, p {
+.content h3 {
+  color: rgb(0, 17, 253);
+  font-size: clamp(2rem,10vw, 2.75rem);
+}
+
+.content h2, h3  {
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
