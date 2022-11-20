@@ -159,7 +159,7 @@ body {
   --text: rgb(0, 0, 0);
   --border-color: rgba(255, 0, 0, 0);
   --linear1: rgb(255, 255, 255);
-  --bg: rgba(198, 198, 199, 0.205);
+  --bg: rgba(123, 123, 126, 0.205);
   --box-shadow: rgba(0, 0, 0, 0.3);
 
   --navbar-text: var(--gray3);
@@ -178,7 +178,7 @@ body {
   --text: rgb(255, 255, 255);
   --border-color: rgba(255, 255, 255, 0);
   --linear1: black;
-  --bg: rgba(26, 25, 25, 0.5);
+  --bg: rgba(66, 65, 65, 0.5);
   --box-shadow: rgba(255, 255, 255, 0.15);
 
   --navbar-text: var(--gray3);
@@ -200,7 +200,7 @@ body {
 
   --navbar-text: var(--gray6);
 
-  --circle-linear: rgb(74, 222, 222), rgb(221, 223, 235);
+  --circle-linear: rgb(221, 223, 235), rgb(28, 76, 207);
   transition: 2s;
 }
 
@@ -444,7 +444,7 @@ h3 {
 
 /* Main */
 
-.main {
+.main{
   color: var(--text);
   max-width: 50rem;
   min-width: 18rem;
@@ -452,8 +452,10 @@ h3 {
 
   position: relative;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding-inline: 1rem;
+
+  background-attachment: fixed;
 }
 
 .card {
