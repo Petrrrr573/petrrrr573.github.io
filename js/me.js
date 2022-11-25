@@ -2,6 +2,7 @@ let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
 let logoSpan = document.querySelectorAll(".logo");
 let logoSpan2 = document.querySelectorAll(".logo2");
+const body = document.body;
 
 window.addEventListener("DOMContentLoaded", ()=>{
 
@@ -30,7 +31,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
   })
 
 
-})
+});
 
 
 
@@ -57,33 +58,34 @@ window.addEventListener("DOMContentLoaded", ()=>{
   })
 
 
-})
+});
 
 
 
 
-window.addEventListener(('load'), () => {
-  if(document.querySelector('.main_page') !== null) {
- window.sessionStorage.setItem('Main_page', 'displayed');
- }
- })
- if (window.sessionStorage.getItem('Main_page')) {
-  document.querySelector('.main_page').classList.remove('animated');
+// window.addEventListener(('load'), () => {
+//   if(document.querySelector('.main_page') !== null) {
+//  window.sessionStorage.setItem('Main_page', 'displayed');
+//  }
+//  })
 
-  document.querySelector('.main_page').style.opacity = '1';
-  intro.style.display = "none";
-}
+//  if (window.sessionStorage.getItem('Main_page')) {
+//   document.querySelector('.main_page').classList.remove('animated');
 
-window.addEventListener(('load'), () => {
-  if(document.querySelector('.navbar-main') !== null) {
- window.sessionStorage.setItem('navbar', 'displayed');
- }
- })
- if (window.sessionStorage.getItem('navbar')) {
-  document.querySelector('.navbar-main').classList.remove('animated');
+//   document.querySelector('.main_page').style.opacity = '1';
+//   intro.style.display = "none";
+// };
 
-  document.querySelector('.navbar-main').style.opacity = '1';
-}
+// window.addEventListener(('load'), () => {
+//   if(document.querySelector('.navbar-main') !== null) {
+//  window.sessionStorage.setItem('navbar', 'displayed');
+//  }
+//  })
+//  if (window.sessionStorage.getItem('navbar')) {
+//   document.querySelector('.navbar-main').classList.remove('animated');
+
+//   document.querySelector('.navbar-main').style.opacity = '1';
+// };
 
 
 
@@ -93,7 +95,6 @@ const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const blueButton = document.getElementById('blue');
 const solarButton = document.getElementById('solar');
-const body = document.body;
 
 
 // Apply the cached theme on reload
@@ -141,4 +142,13 @@ document.addEventListener("click", e => {
     if (dropdown === currentDropdown) return
     dropdown.classList.remove("active")
   })
-})
+});
+
+window.addEventListener("scroll", function(e) {
+  const target = document.querySelector(".main");
+
+  var scrolled = window.pageYOffset;
+  var rate = scrolled * 0.75;
+
+  target.style.transform = "translate3d(0px, "+rate/50+"rem, 0px)";
+});

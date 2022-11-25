@@ -1,0 +1,98 @@
+/* Root */
+:root {
+  --white: white;
+  --black: rgb(0, 0, 0);
+  --pink: rgb(245, 2, 75);
+  --name: rgb(245, 2, 75);
+
+  --text: white;
+  --border-color: black;
+  --linear1: rgb(42, 26, 26);
+  --bg: rgb(53, 29, 29);
+  --box-shadow: black;
+  --navbar-text: var(--gray5);
+
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --blue: #0084a5;
+  --purple: #a82dd1;
+  --yellow: #fff565;
+}
+
+/* Témata */
+.light {
+  --white: white;
+  --black: rgb(0, 0, 0);
+  --pink: rgb(255, 255, 255);
+  --name: rgb(0, 0, 0);
+
+  --text: rgb(0, 0, 0);
+  --border-color: rgba(255, 0, 0, 0);
+  --linear1: rgb(255, 255, 255);
+  --bg: rgba(123, 123, 126, 0.205);
+  --bg-sec: rgb(220, 219, 219);
+  --box-shadow: rgba(0, 0, 0, 0.3);
+
+  --navbar-text: var(--gray3);
+
+  --circle-linear: rgb(44, 43, 43), rgb(255, 255, 255);
+  transition: 2s;
+
+  --svg-waves: url(../SVG/layered-waves-haikei.svg);
+}
+
+
+.dark {
+  --white: white;
+  --black: rgb(0, 0, 0);
+  --pink: rgb(0, 0, 0);
+  --name: rgb(255, 255, 255);
+
+  --text: rgb(255, 255, 255);
+  --border-color: rgba(255, 255, 255, 0);
+  --linear1: black;
+  --bg: rgba(66, 65, 65, 0.5);
+  --bg-sec: rgb(37, 37, 37);
+  --box-shadow: rgba(255, 255, 255, 0.15);
+
+  --navbar-text: var(--gray3);
+  --circle-linear: rgb(163, 159, 159), rgb(255, 255, 255);
+  transition: 2s;
+
+  --svg-waves: url(../SVG/layered-waves-dark.svg);
+}
+
+.blue {
+  --white: white;
+  --black: rgb(255, 255, 255);
+  --pink: rgb(74, 163, 222);
+  --name: rgb(255, 255, 255);
+
+  --text: rgb(255, 255, 255);
+  --border-color: rgba(255, 0, 0, 0);
+  --linear1: rgb(30, 46, 151);
+  --bg: rgba(96, 111, 204, 0.5);
+  --bg-sec: rgb(52, 61, 114);
+  --box-shadow: rgba(129, 211, 243, 0.15);
+
+  --navbar-text: var(--gray6);
+
+  --circle-linear: rgb(221, 223, 235), rgb(28, 76, 207);
+  transition: 2s;
+
+  --svg-waves: url(../SVG/layered-waves-blue.svg);
+}
+
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#light::before {
+  background: #ffffff;
+}
