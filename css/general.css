@@ -70,6 +70,7 @@ h3 {
   word-break: break-word;
 
   text-align: center;
+  border-top: 1rem solid var(--bg);
 }
 
 .footer p {
