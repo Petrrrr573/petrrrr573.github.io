@@ -148,7 +148,17 @@ window.addEventListener("scroll", function(e) {
   const target = document.querySelector(".main");
 
   var scrolled = window.pageYOffset;
-  var rate = scrolled * 0.75;
+  var rate = scrolled * 0.90;
+
+  target.style.transform = "translate3d(0px, "+rate/50+"rem, 0px)";
+});
+
+
+window.addEventListener("scroll", function(e) {
+  const target = document.querySelector(".projekty");
+
+  var scrolled = window.pageYOffset;
+  var rate = scrolled * 0.55;
 
   target.style.transform = "translate3d(0px, "+rate/50+"rem, 0px)";
 });

@@ -28,7 +28,6 @@
 }
 
 .content h3 {
-  font-size: 2rem;
   font-size: clamp(1.5rem, 8vw, 3rem);
   color: var(--bg);
 }
@@ -97,8 +96,48 @@
   background-size: cover;
   opacity: 0;
   z-index: 4;
+  /* margin-top: 10vw; */
 }
 
 .layer1 {
   background-image: var(--svg-waves);
+}
+
+#group {
+  stroke: var(--text);
+}
+
+#arrow1, #arrow2, #arrow3{
+  opacity: 1;
+  animation: fade 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#arrow2 {
+  animation-delay: 1000ms;
+}
+
+#arrow3 {
+  animation-delay: 2000ms;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.projekty svg{
+  width: 50vw;
 }

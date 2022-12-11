@@ -331,3 +331,14 @@ h3 {
     display: none;
   }
 }
+
+.projekty {
+  margin-top: 10vw;
+  color: var(--text);
+  opacity: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.projekty h2 {
+  font-size: clamp(3rem, 15vw, 6rem);
+}
