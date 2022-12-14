@@ -1,5 +1,3 @@
-# WWW
-Moje stránka, mám rád MASO
 MASO 🥩
 MASO 🥩
 MASO 🥩
