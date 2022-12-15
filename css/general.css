@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
   background-color: var(--linear1);
@@ -25,7 +29,8 @@ body {
 
   overflow-x: hidden;
   overflow-y: hidden;
-  scroll-behavior: smooth;
+
+  transition: 1s;
 }
 
 /* Text stuff */

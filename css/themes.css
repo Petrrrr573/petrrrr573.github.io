@@ -41,7 +41,6 @@
   --navbar-text: var(--gray3);
 
   --circle-linear: rgb(44, 43, 43), rgb(255, 255, 255);
-  transition: 2s;
 
   --svg-waves: url(../SVG/layered-waves-haikei.svg);
 }
@@ -62,7 +61,6 @@
 
   --navbar-text: var(--gray3);
   --circle-linear: rgb(163, 159, 159), rgb(255, 255, 255);
-  transition: 2s;
 
   --svg-waves: url(../SVG/layered-waves-dark.svg);
 }
@@ -83,7 +81,6 @@
   --navbar-text: var(--gray6);
 
   --circle-linear: rgb(221, 223, 235), rgb(28, 76, 207);
-  transition: 2s;
 
   --svg-waves: url(../SVG/layered-waves-blue.svg);
 }
