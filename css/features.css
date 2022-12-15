@@ -107,20 +107,17 @@
   stroke: var(--text);
 }
 
-#arrow1, #arrow2, #arrow3{
+#arrow {
+  animation: fade 3s ease-out 1s infinite;
   opacity: 1;
-  animation: fade 3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
 }
 
-#arrow2 {
-  animation-delay: 1000ms;
+#arrow:nth-child(1) {
+  animation: fade 3s ease-out 2s infinite;
 }
 
-#arrow3 {
-  animation-delay: 2000ms;
+#arrow:nth-child(2) {
+  animation: fade 3s ease-out infinite;
 }
 
 
