@@ -76,7 +76,7 @@
   --linear1: rgb(30, 46, 151);
   --bg: rgba(96, 111, 204, 0.5);
   --bg-sec: rgb(52, 61, 114);
-  --box-shadow: rgba(129, 211, 243, 0.15);
+  --box-shadow: rgba(129, 211, 243, 0.25);
 
   --navbar-text: var(--gray6);
 

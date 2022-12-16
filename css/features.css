@@ -1,6 +1,7 @@
 .feature {
   margin: 4rem 0;
   margin-bottom: 7rem;
+
 }
 
 .feature img{
@@ -52,6 +53,7 @@
     padding: 1rem 0;
 
     border-left: 0.75rem solid var(--bg);
+    /* border: 4mm ridge rgb(255, 255, 255); */
   }
 
   .feature:nth-child(even) {
@@ -105,6 +107,13 @@
 
 #group {
   stroke: var(--text);
+  animation: šipka 2s ease-in infinite alternate-reverse;
+}
+
+@keyframes šipka {
+  to {
+    transform: translateY(-2.5px);
+  }
 }
 
 #arrow {
@@ -120,7 +129,6 @@
   animation: fade 3s ease-out infinite;
 }
 
-
 @keyframes fade {
   0% {
     opacity: 1;
@@ -132,6 +140,27 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+#Ellipse {
+  fill: var(--box-shadow);
+  transform: translateY(4px);
+  opacity: 0;
+  animation: stín 2s ease-in infinite alternate-reverse;
+}
+
+@keyframes stín {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
