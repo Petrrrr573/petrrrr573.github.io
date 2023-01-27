@@ -29,8 +29,6 @@ body {
 
   overflow-x: hidden;
   overflow-y: hidden;
-
-  transition: 1s;
 }
 
 /* Text stuff */

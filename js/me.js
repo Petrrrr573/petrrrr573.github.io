@@ -23,21 +23,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         }, (idx + 1) * 50)
       })
     },4000);
-
-    setTimeout(()=>{
-      intro.style.top = "-100vh";
-    },4250);
-
-  })
-
-
-});
-
-
-
-window.addEventListener("DOMContentLoaded", ()=>{
-
-  setTimeout(()=>{
+    
 
     logoSpan2.forEach((span, idx)=>{
       setTimeout(()=>{
@@ -55,12 +41,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
       })
     },4000);
 
+
+    setTimeout(()=>{
+      intro.style.top = "-100vh";
+    },4250);
   })
-
-
 });
-
-
 
 
 // window.addEventListener(('load'), () => {
