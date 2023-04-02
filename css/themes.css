@@ -34,7 +34,7 @@
   --text: rgb(0, 0, 0);
   --border-color: rgba(255, 0, 0, 0);
   --linear1: rgb(255, 255, 255);
-  --bg: rgba(123, 123, 126, 0.205);
+  --bg: rgb(123, 123, 126);
   --bg-sec: rgb(220, 219, 219);
   --box-shadow: rgba(0, 0, 0, 0.3);
 
@@ -92,4 +92,23 @@
 
 #light::before {
   background: #ffffff;
+}
+
+.new {
+  --white: white;
+  --black: rgb(0, 0, 0);
+  --name-hover: rgb(0, 255, 0);
+
+  --text: #00A8E8;
+  --border-color: rgba(0, 0, 0, 0);
+  --main-bg: #003459;
+  --navbar-bg: #007EA7;
+  --project-bg: #00171F;
+  --box-shadow: rgba(167, 168, 168, 0.151);
+
+  --navbar-text: rgb(108, 121, 131);
+
+  --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
+
+  --svg-waves: url(../SVG/layered-waves-haikei.svg);
 }

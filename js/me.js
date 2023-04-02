@@ -141,10 +141,61 @@ window.addEventListener("scroll", function(e) {
 
 
 window.addEventListener("scroll", function(e) {
-  const target = document.querySelector(".projekty");
+  const target = document.querySelector(".projekty-arrow");
 
   var scrolled = window.pageYOffset;
   var rate = scrolled * 0.55;
 
   target.style.transform = "translate3d(0px, "+rate/50+"rem, 0px)";
 });
+
+/* -- Glow effect -- */
+
+const blob = document.getElementById("blob");
+let scrollPosition = 0;
+
+function mouseOrScrollAction(event) { 
+  const { clientX, clientY } = event;
+
+  scrollPosition = window.scrollY;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY+scrollPosition}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+document.addEventListener("mousemove", mouseOrScrollAction);
+window.addEventListener("scroll", mouseOrScrollAction);
+
+
+/* -- Text effect -- */
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.querySelector(".name").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.name[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.name.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
+}
