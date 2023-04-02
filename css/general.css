@@ -111,34 +111,6 @@ h3 {
   border-bottom: 0px;
 }
 
-/* .name::after {
-  content: "";
-  width: 0px;
-  height: 3px;
-  background: var(--name-hover);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.name:hover::after,
-.name:active::after {
-  width: 100%;
-}
-
-.name:hover,
-.name:active {
-  transition: 0.75s;
-  font-size: 3.25rem;
-  color: var(--name-hover);
-}
-
-.line-through {
-  text-decoration: line-through rgba(0, 0, 0, 0.719);
-  text-decoration-thickness: 0.175rem;
-  color: rgb(160, 160, 160);
-} */
-
 .animated {
   animation: show 2s 4s ease-in-out forwards,
   overflow-y 2s 4s ease-in-out forwards;
