@@ -97,7 +97,6 @@
 .new {
   --white: white;
   --black: rgb(0, 0, 0);
-  --name-hover: rgb(0, 255, 0);
 
   --text: #00A8E8;
   --border-color: rgba(0, 0, 0, 0);
@@ -105,8 +104,30 @@
   --navbar-bg: #007EA7;
   --project-bg: #00171F;
   --box-shadow: rgba(167, 168, 168, 0.151);
+  --arrpw-shadow: rgba(167, 168, 168, 0.151);
+
+  --navbar-text: rgb(184, 189, 192);
+  --navbar-hover: rgb(254, 255, 255);
+
+  --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
+
+  --svg-waves: url(../SVG/layered-waves-haikei.svg);
+}
+
+.new2 {
+  --white: white;
+  --black: rgb(0, 0, 0);
+
+  --text: #B5FFE1;
+  --border-color: rgba(0, 0, 0, 0);
+  --main-bg: #65B891;
+  --navbar-bg: #93E5AB;
+  --project-bg: #4E878C;
+  --box-shadow: #53878b50;
+  --arrow-shadow: #53878bc2;
 
   --navbar-text: rgb(108, 121, 131);
+  --navbar-hover: rgb(184, 189, 192);
 
   --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
 

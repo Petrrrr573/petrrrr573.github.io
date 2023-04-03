@@ -155,6 +155,9 @@ const blob = document.getElementById("blob");
 let scrollPosition = 0;
 
 function mouseOrScrollAction(event) { 
+  if(window.innerWidth < 496){
+    return;
+  }
   const { clientX, clientY } = event;
 
   scrollPosition = window.scrollY;
@@ -175,7 +178,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
 
-document.querySelector(".name").onmouseover = event => {  
+document.querySelector(".name").onmouseover = event => {
   let iteration = 0;
   
   clearInterval(interval);

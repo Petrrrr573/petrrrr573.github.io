@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* Body */
@@ -269,8 +272,8 @@ h3 {
   .circle {
     display: none;
   }
-  .name::after {
-    display: none;
+  .name {
+    font-size: 1.7rem;
   }
 }
 
@@ -407,7 +410,7 @@ h3 {
 .dropdown.active > .link,
 .link:hover {
   transition: 1s;
-  color: var(--text);
+  color: var(--navbar-hover);
 }
 
 .dropdown {
@@ -633,7 +636,7 @@ h3 {
 }
 
 #Ellipse {
-  fill: var(--box-shadow);
+  fill: var(--arrow-shadow);
   transform: translateY(4px);
   opacity: 0;
   animation: stín 2s ease-in infinite alternate-reverse;
