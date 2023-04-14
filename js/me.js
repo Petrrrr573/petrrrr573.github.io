@@ -96,15 +96,15 @@ if (theme) {
 // Button Event Handlers
 
 darkButton.onclick = () => {
-  body.classList.replace('light', 'dark');
-  body.classList.replace('blue', 'dark');
-  sessionStorage.setItem('theme', 'dark');
+  body.classList.replace('new', 'new2');
+  body.classList.replace('blue', 'new2');
+  sessionStorage.setItem('theme', 'new2');
 };
 
 lightButton.onclick = () => {
-  body.classList.replace('dark', 'light');
-  body.classList.replace('blue', 'light');
-  sessionStorage.setItem('theme', 'light');
+  body.classList.replace('new2', 'new');
+  body.classList.replace('blue', 'new');
+  sessionStorage.setItem('theme', 'new');
 };
 
 blueButton.onclick = () => {
@@ -153,19 +153,25 @@ window.addEventListener("scroll", function(e) {
 
 const blob = document.getElementById("blob");
 let scrollPosition = 0;
+const maxPosY = document.documentElement.scrollHeight - blob.offsetHeight;
 
-function mouseOrScrollAction(event) { 
+function mouseOrScrollAction(event) {
   if(window.innerWidth < 496){
     return;
   }
-  const { clientX, clientY } = event;
 
+  const { clientX, clientY } = event;
   scrollPosition = window.scrollY;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY+scrollPosition}px`
-  }, { duration: 3000, fill: "forwards" });
+
+  if (clientY+scrollPosition >= maxPosY) {
+    blob.animate({
+      left: `${clientX}px`,
+    }, { duration: 3000, fill: "forwards" });
+  }else {
+    blob.animate({
+      left: `${clientX}px`,
+      top: `${clientY+scrollPosition}px`
+    }, { duration: 3000, fill: "forwards" });}
 }
 
 document.addEventListener("mousemove", mouseOrScrollAction);
