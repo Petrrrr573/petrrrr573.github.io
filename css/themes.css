@@ -111,14 +111,14 @@
 
   --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
 
-  --svg-waves: url(../SVG/layered-waves-haikei.svg);
+  --svg-waves: url(../SVG/new.svg);
 }
 
 .new2 {
   --white: white;
   --black: rgb(0, 0, 0);
 
-  --text: #B5FFE1;
+  --text: #e7f1ee;
   --border-color: rgba(0, 0, 0, 0);
   --main-bg: #65B891;
   --navbar-bg: #93E5AB;
@@ -131,5 +131,5 @@
 
   --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
 
-  --svg-waves: url(../SVG/layered-waves-haikei.svg);
+  --svg-waves: url(../SVG/new2.svg);
 }
