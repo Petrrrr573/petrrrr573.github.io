@@ -153,7 +153,7 @@ window.addEventListener("scroll", function(e) {
 
 const blob = document.getElementById("blob");
 let scrollPosition = 0;
-const maxPosY = document.documentElement.scrollHeight - blob.offsetHeight;
+const maxPosY = document.documentElement.scrollHeight - blob.offsetHeight; // Max height of the website
 
 function mouseOrScrollAction(event) {
   if(window.innerWidth < 496){
@@ -163,6 +163,7 @@ function mouseOrScrollAction(event) {
   const { clientX, clientY } = event;
   scrollPosition = window.scrollY;
 
+  // Prevent the blob from going past the max height of the website
   if (clientY+scrollPosition >= maxPosY) {
     blob.animate({
       left: `${clientX}px`,
