@@ -153,9 +153,11 @@ window.addEventListener("scroll", function(e) {
 
 const blob = document.getElementById("blob");
 let scrollPosition = 0;
-const maxPosY = document.documentElement.scrollHeight - blob.offsetHeight; // Max height of the website
+let client_y = 0; // Used for storing the last y position of cursor
+let client_x = 0; // Used for storing the last x position of cursor
+const maxPosY = document.documentElement.scrollHeight - blob.offsetHeight; // Max height of the websie
 
-function mouseOrScrollAction(event) {
+function MouseAction(event) {
   if(window.innerWidth < 496){
     return;
   }
@@ -163,6 +165,10 @@ function mouseOrScrollAction(event) {
   const { clientX, clientY } = event;
   scrollPosition = window.scrollY;
 
+  if(clientX != undefined && clientY != undefined){ // Stores last positions of cursor
+    client_y = clientY;
+    client_x = clientX;
+  }
   // Prevent the blob from going past the max height of the website
   if (clientY+scrollPosition >= maxPosY) {
     blob.animate({
@@ -175,8 +181,25 @@ function mouseOrScrollAction(event) {
     }, { duration: 3000, fill: "forwards" });}
 }
 
-document.addEventListener("mousemove", mouseOrScrollAction);
-window.addEventListener("scroll", mouseOrScrollAction);
+function ScrollAction(event) {
+  if(window.innerWidth < 496){
+    return;
+  }
+  scrollPosition = window.scrollY;
+  // Prevent the blob from going past the max height of the website
+  if (client_y+scrollPosition >= maxPosY) {
+    blob.animate({
+      left: `${client_x}px`,
+    }, { duration: 3000, fill: "forwards" });
+  }else {
+    blob.animate({
+      left: `${client_x}px`,
+      top: `${client_y+scrollPosition}px`
+    }, { duration: 3000, fill: "forwards" });}
+}
+
+document.addEventListener("mousemove", MouseAction);
+window.addEventListener("scroll", ScrollAction);
 
 
 /* -- Text effect -- */
