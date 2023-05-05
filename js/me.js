@@ -75,60 +75,60 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-// DOM Elements
+// // DOM Elements
 
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const blueButton = document.getElementById('blue');
-const solarButton = document.getElementById('solar');
-
-
-// Apply the cached theme on reload
-
-const theme = sessionStorage.getItem('theme');
-const isSolar = sessionStorage.getItem('isSolar');
-
-if (theme) {
-  body.classList.add(theme);
-  isSolar && body.classList.add('solar');
-}
-
-// Button Event Handlers
-
-darkButton.onclick = () => {
-  body.classList.replace('new', 'new2');
-  body.classList.replace('blue', 'new2');
-  sessionStorage.setItem('theme', 'new2');
-};
-
-lightButton.onclick = () => {
-  body.classList.replace('new2', 'new');
-  body.classList.replace('blue', 'new');
-  sessionStorage.setItem('theme', 'new');
-};
-
-blueButton.onclick = () => {
-  body.classList.replace('dark', 'blue');
-  body.classList.replace('light', 'blue');
-  sessionStorage.setItem('theme', 'blue');
-};
+// const darkButton = document.getElementById('dark');
+// const lightButton = document.getElementById('light');
+// const blueButton = document.getElementById('blue');
+// const solarButton = document.getElementById('solar');
 
 
-document.addEventListener("click", e => {
-  const isDropdownButton = e.target.matches("[data-dropdown-button]")
-  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+// // Apply the cached theme on reload
 
-  let currentDropdown
-  if (isDropdownButton) {
-    currentDropdown = e.target.closest("[data-dropdown]")
-    currentDropdown.classList.toggle("active")
-  }
+// const theme = sessionStorage.getItem('theme');
+// const isSolar = sessionStorage.getItem('isSolar');
 
-  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
-    if (dropdown === currentDropdown) return
-    dropdown.classList.remove("active")
-  })
-});
+// if (theme) {
+//   body.classList.add(theme);
+//   isSolar && body.classList.add('solar');
+// }
+
+// // Button Event Handlers
+
+// darkButton.onclick = () => {
+//   body.classList.replace('new', 'new2');
+//   body.classList.replace('blue', 'new2');
+//   sessionStorage.setItem('theme', 'new2');
+// };
+
+// lightButton.onclick = () => {
+//   body.classList.replace('new2', 'new');
+//   body.classList.replace('blue', 'new');
+//   sessionStorage.setItem('theme', 'new');
+// };
+
+// blueButton.onclick = () => {
+//   body.classList.replace('dark', 'blue');
+//   body.classList.replace('light', 'blue');
+//   sessionStorage.setItem('theme', 'blue');
+// };
+
+
+// document.addEventListener("click", e => {
+//   const isDropdownButton = e.target.matches("[data-dropdown-button]")
+//   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+
+//   let currentDropdown
+//   if (isDropdownButton) {
+//     currentDropdown = e.target.closest("[data-dropdown]")
+//     currentDropdown.classList.toggle("active")
+//   }
+
+//   document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+//     if (dropdown === currentDropdown) return
+//     dropdown.classList.remove("active")
+//   })
+// });
 
 window.addEventListener("scroll", function(e) {
   const target = document.querySelector(".main");
@@ -173,29 +173,26 @@ function MouseAction(event) {
   if (clientY+scrollPosition >= maxPosY) {
     blob.animate({
       left: `${clientX}px`,
-    }, { duration: 3000, fill: "forwards" });
+    }, { duration: 5000, fill: "forwards" });
   }else {
     blob.animate({
       left: `${clientX}px`,
       top: `${clientY+scrollPosition}px`
-    }, { duration: 3000, fill: "forwards" });}
+    }, { duration: 5000, fill: "forwards" });}
 }
 
 function ScrollAction(event) {
-  if(window.innerWidth < 496){
-    return;
-  }
   scrollPosition = window.scrollY;
   // Prevent the blob from going past the max height of the website
   if (client_y+scrollPosition >= maxPosY) {
     blob.animate({
       left: `${client_x}px`,
-    }, { duration: 3000, fill: "forwards" });
+    }, { duration: 5000, fill: "forwards" });
   }else {
     blob.animate({
       left: `${client_x}px`,
       top: `${client_y+scrollPosition}px`
-    }, { duration: 3000, fill: "forwards" });}
+    }, { duration: 5000, fill: "forwards" });}
 }
 
 document.addEventListener("mousemove", MouseAction);
