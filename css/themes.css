@@ -99,7 +99,7 @@
   --black: rgb(0, 0, 0);
 
   --text: #d8e9f0;
-  --border-color: rgba(0, 0, 0, 0);
+  --border-color: rgb(0, 0, 0);
   --main-bg: #003459;
   --navbar-bg: #007EA7;
   --project-bg: #00171F;
@@ -111,25 +111,7 @@
 
   --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
 
+  --contact-bg: #17171A;
+
   --svg-waves: url(../SVG/new.svg);
-}
-
-.new2 {
-  --white: white;
-  --black: rgb(0, 0, 0);
-
-  --text: #e7f1ee;
-  --border-color: rgba(0, 0, 0, 0);
-  --main-bg: #65B891;
-  --navbar-bg: #93E5AB;
-  --project-bg: #4E878C;
-  --box-shadow: #53878b50;
-  --arrow-shadow: #53878bc2;
-
-  --navbar-text: rgb(108, 121, 131);
-  --navbar-hover: rgb(184, 189, 192);
-
-  --circle-linear: linear-gradient(to right, aquamarine, mediumpurple);
-
-  --svg-waves: url(../SVG/new2.svg);
 }
