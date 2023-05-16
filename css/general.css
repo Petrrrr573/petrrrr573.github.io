@@ -676,6 +676,7 @@ h3 {
   text-align: center;
   border-top: 1rem solid var(--navbar-bg);
   z-index: 6;
+  overflow: hidden;
 }
 
 .end {
@@ -692,6 +693,7 @@ h3 {
 .contact-container {
   text-align: start;
   margin-left: 7rem;
+  z-index: 1;
 }
 
 .contact-container h1 {
@@ -708,13 +710,48 @@ h3 {
 
 .contact {
   display: flex;
-  width: 57vw;
+  position: relative;
+  width: 50vw;
 }
 
 .info, .form {
   width: 50%;
   display: block;
   position: relative;
+  z-index: 4;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3 {
+  position: absolute;
+  z-index: 0;
+}
+
+.rectangle1 {
+  background-color: #263055;
+  left: 75%;
+  top: 25%;
+  width: 35%;
+  height: 90%;
+  z-index: 1 !important;
+}
+
+.rectangle2 {
+  background-color: #343D60;
+  left: 90%;
+  top: 40%;
+  width: 15%;
+  height: 65%;
+  z-index: 2 !important;
+}
+.rectangle3 {
+  background-color: #1C2535;
+  left: 90%;
+  top: -5%;
+  width: 5%;
+  height: 115%;
+  z-index: 3 !important;
 }
 
 .icon-container {
@@ -737,19 +774,22 @@ h3 {
 }
 
 .github-icon-container {
-  display: block;
+  display: flex;
+  position: static;
   width: 100%;
   line-height: 2rem;
-  position: absolute;
-  bottom: 0;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.github-icon-container a {
+  text-decoration: none;
 }
 
 .github {
   line-height: inherit;
+  width: min-content;
   display: block;
-  margin-top: auto;
-  margin-bottom: 0;
 }
 
 .info .icon {
@@ -814,7 +854,7 @@ h3 {
 }
 
 .input-container .textarea:focus ~ label,
-.input-container .textarea:valid ~ label{
+.input-container .textarea:valid ~ label {
   transform: translateY(-6.5rem) scale(0.8);
   padding: 0 .2em;
   color: #2196f3;
@@ -837,6 +877,19 @@ h3 {
   margin-left: auto; 
   margin-right: 0;
 }
+
+@media (max-width: 1535px) {
+  .contact {
+   width: 65vw;
+  } 
+ }
+ 
+ @media (max-width: 1200px) {
+   .button-container {
+     margin-bottom: 0px;
+     margin-top: 3rem;
+   }
+  }
 
 @media (max-width: 537px) {
   .footer{
