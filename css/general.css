@@ -884,12 +884,43 @@ h3 {
   } 
  }
  
- @media (max-width: 1200px) {
+@media (max-width: 1200px) {
    .button-container {
      margin-bottom: 0px;
      margin-top: 3rem;
    }
+
+   .rectangle1 {
+    background-color: #263055;
+    left: 75%;
+    top: 25%;
+    width: 35%;
+    height: 90%;
+    z-index: 1 !important;
+    top: 20%;
   }
+  
+  .rectangle2 {
+    background-color: #343D60;
+    left: 90%;
+    top: 40%;
+    width: 15%;
+    height: 65%;
+    z-index: 2 !important;
+    top: 37.5%;
+  }
+  .rectangle3 {
+    background-color: #1C2535;
+    left: 90%;
+    top: -5%;
+    width: 5%;
+    height: 115%;
+    z-index: 3 !important;
+    top: -5%;
+    height: 110%;
+    width: 7.5%;
+  }
+}
 
 @media (max-width: 537px) {
   .footer{
