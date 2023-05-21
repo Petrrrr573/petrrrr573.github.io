@@ -32,15 +32,19 @@ body {
 
 /* Text stuff */
 
-.text1 {
-  font-size: 1rem;
-}
 
-.text2 {
-  font-size: 1rem;
-  text-align: start;
+.aboutme {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  text-align: center;
+  white-space: nowrap;
 
   line-height: 1.5rem;
+}
+
+@media (max-width: 666px) {
+  .aboutme {
+    white-space: normal;
+  }
 }
 
 
@@ -58,7 +62,8 @@ h3 {
 }
 
 .name {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(1.75rem, 8vw, 5rem);
+  white-space: nowrap;
   font-weight: 800;
   margin: 0px;
   border-bottom: 0px;
@@ -93,8 +98,7 @@ h3 {
 
 .main{
   color: var(--text);
-  max-width: 40rem;
-  min-width: 18rem;
+  max-width: 50rem;
   opacity: 0;
 
   position: relative;
@@ -243,13 +247,10 @@ h3 {
   .circle {
     display: none;
   }
-  .name {
-    font-size: 1.7rem;
-  }
 }
 
 .projekty-arrow {
-  margin-top: 10vw;
+  margin-top: 13rem;
   color: var(--text);
   opacity: 0;
   font-family: 'Bebas Neue', cursive;
@@ -257,7 +258,7 @@ h3 {
 }
 
 .projekty-arrow h2 {
-  font-size: clamp(3rem, 15vw, 6rem);
+  font-size: clamp(3rem, 15vw, 8rem);
   margin: 0;
 }
 
