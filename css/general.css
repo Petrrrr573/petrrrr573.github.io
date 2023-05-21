@@ -58,7 +58,7 @@ h3 {
 }
 
 .name {
-  font-size: 3rem;
+  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 800;
   margin: 0px;
   border-bottom: 0px;
@@ -93,7 +93,7 @@ h3 {
 
 .main{
   color: var(--text);
-  max-width: 30rem;
+  max-width: 40rem;
   min-width: 18rem;
   opacity: 0;
 
@@ -262,6 +262,7 @@ h3 {
 
 .projekty-arrow h2 {
   font-size: clamp(3rem, 15vw, 6rem);
+  margin: 0;
 }
 
 /* Splash screen */
@@ -509,13 +510,15 @@ h3 {
 
     padding: 1rem 0;
 
-    border-left: 0.75rem solid var(--navbar-bg);
+    border-left: 3px solid;
+    border-image: var(--features-border) 1 100%;
     /* border: 4mm ridge rgb(255, 255, 255); */
   }
 
   .feature:nth-child(even) {
     flex-direction: row-reverse;
-    border-right: 0.75rem solid var(--navbar-bg);
+    border-right: 3px solid;
+    border-image: var(--features-border) 1 100%;
     border-left: none;
   }
 

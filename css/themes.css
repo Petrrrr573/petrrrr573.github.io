@@ -102,6 +102,7 @@
   --border-color: rgba(0, 0, 0, 0);
   --main-bg: #003459;
   --navbar-bg: #007EA7;
+  --features-border: linear-gradient(to bottom,#007da700, #007EA7, rgba(255, 0, 255, 0));
   --project-bg: #00171F;
   --box-shadow: rgba(167, 168, 168, 0.151);
   --arrpw-shadow: rgba(167, 168, 168, 0.151);
