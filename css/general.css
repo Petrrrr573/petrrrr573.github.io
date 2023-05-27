@@ -484,12 +484,12 @@ h3 {
 }
 
 .content h3 {
-  font-size: clamp(1.5rem, 8vw, 3rem);
+  font-size: clamp(1.5rem, 8vw, 5rem);
   color: var(--navbar-bg);
 }
 
 .content h2 {
-  font-size: clamp(2rem, 10vw, 4rem);
+  font-size: clamp(2rem, 10vw, 6rem);
 }
 
 .content h2, h3 {
@@ -701,7 +701,7 @@ h3 {
 }
 
 .contact-container h1 {
-  font-size: clamp(3rem, 2vw, 6rem);
+  font-size: clamp(3rem, 4vw, 8rem);
   margin-top: 0;
   line-height: 1;
 }
@@ -926,14 +926,62 @@ h3 {
   }
 }
 
-@media (max-width: 537px) {
-  .footer{
-    display: block;
-    align-items: center;
-  }  
+@media (max-width: 880px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    display: none;
+  }
 
-  .contact-container {
+  .contact-container { 
+    width: 80%;
     padding-inline: 0 0;
     margin-inline: auto;
+  }
+
+  .contact-container .kontakty,
+  .contact-container h1 {
+    text-align: center;
+    line-height: 1;
+  }
+
+  .kontakty {
+    margin-bottom: 1rem;
+  }
+
+  .contact {
+    display: block;
+    width: 100%;
+  }
+
+  .info,
+  .form {
+    padding: 0;
+    padding-block: 1rem;
+    width: 100%;
+  }
+
+  .info {
+    border-radius: 7px 7px 0 0;
+  }
+  
+  .form {
+    border-radius: 0 0 7px 7px;
+  }
+
+  .info p,
+  .info .icon-container,
+  .info .github-icon-container {
+    margin-inline: 1rem;
+  }
+
+  .input-container label {
+    left: 15vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-container { 
+    width: 100%;
   }
 }
