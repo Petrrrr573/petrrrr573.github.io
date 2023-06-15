@@ -155,23 +155,32 @@
             </a>
           </div>
         </div>
-        <div class="form">
+        <form class="form" action="https://formsubmit.co/0e04d6b533bc5d1cd2c0927a5a803bd6" method="POST">
+
+          <!-- Disble captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display:none">
+
+          <input type="hidden" name="_next" value="https://petrrrr573.github.io/cz.html">
+
           <div class="input-container">
-            <input type="text" class="input" spellcheck="false" required>
+            <input type="text" class="input" spellcheck="false" name="name" required>
             <label>jméno</label>
           </div>
           <div class="input-container">
-            <input type="text" class="input" spellcheck="false" required>
+            <input type="text" class="input" spellcheck="false" name="email" required>
             <label>email</label>
           </div>
           <div class="input-container">
-            <textarea class="input textarea" spellcheck="false" required></textarea>
+            <textarea class="input textarea" spellcheck="false" name="message" required></textarea>
             <label class="label-input">zpráva</label>
           </div>
           <div class="button-container">
-            <input type="submit" value="Odeslat" class="send-button" onclick="alert('MIMO PROVOZ')">
+            <input type="submit" value="Odeslat" class="send-button">
           </div>
-        </div>
+        </form>
         <div class="rectangle1"></div>
         <div class="rectangle2"></div>
         <div class="rectangle3"></div>
@@ -182,7 +191,5 @@
         Tuhle stránku sám naprogramoval ten nejlepší člověk na světě
     </p>
   </footer> 
-  
-
 </body>
 </html>
