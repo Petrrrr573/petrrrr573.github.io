@@ -17,10 +17,11 @@
 
   <!-- Js -->
   <script defer src="/js/me.js"></script>
+  <script defer src="/js/navbar.js"></script>
   <script src="https://kit.fontawesome.com/4c8f916d10.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="new animated">
+<body class="theme animated">
   <div id="blob"></div>
   
     <!-- Intro -->
@@ -33,22 +34,18 @@
   </div>
 
   <!-- Navigation bar -->
-  <!-- <header class="navbar-main animated" data-dropdown>
-    <div class="dropdown" data-dropdown>
-      <button class="link" data-dropdown-button>Themes</button>
-      <div class="dropdown-menu">
-        <div>
-          <div class="dropdown-links">
-            <a href="#" class="link" id="light">Light</a>
-            <a href="#" class="link" id="dark">Dark</a>
-            <a href="#" class="link" id="blue">Blue</a>
-          </div>
-        </div>
-      </div>
+  <div class="navbar animated" data-toggled='false'>
+    <div class="nav-name-container">
+      <a href="#about" class="link nav-name">Petr Dvořák</a>
     </div>
-  </header> -->
+    <button class="nav-mobile-toggle"></button>
+    <div class="nav-container">
+      <a href="#projects" class="link nav-projects">Projects</a>
+      <a href="#contacts" class="link nav-footer">Contacts</a>
+    </div>
+  </div>
 
-  <main class="main animated">
+  <main class="main animated" id="about">
     <article class="card">
       <div class="circle"></div>
       <div class="circle"></div>
@@ -95,7 +92,7 @@
 
   <div class="spacer layer1 animated"></div>
 
-  <div class="projekty animated">
+  <div class="projekty animated" id="projects">
     <section class="features">
 
       <article class="feature">
@@ -133,7 +130,7 @@
     </section>
   </div>
 
-  <footer class="footer animated">
+  <footer class="footer animated" id="contacts">
     <div class="contact-container">
       <div class="kontakty">contacts</div>
       <h1>Message me</h1>

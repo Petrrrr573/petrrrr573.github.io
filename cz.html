@@ -17,10 +17,11 @@
 
   <!-- Js -->
   <script defer src="/js/me.js"></script>
+  <script defer src="/js/navbar.js"></script>
   <script src="https://kit.fontawesome.com/4c8f916d10.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="new animated">
+<body class="theme animated">
   <div id="blob"></div>
 
     <!-- Intro -->
@@ -33,22 +34,18 @@
   </div>
 
   <!-- Navigation bar -->
-  <!-- <header class="navbar-main animated" data-dropdown>
-    <div class="dropdown" data-dropdown>
-      <button class="link" data-dropdown-button>Témata</button>
-      <div class="dropdown-menu">
-        <div>
-          <div class="dropdown-links">
-            <a href="#" class="link" id="light">Světlé</a>
-            <a href="#" class="link" id="dark">Tmavé</a>
-            <a href="#" class="link" id="blue">Modré</a>
-          </div>
-        </div>
-      </div>
+  <div class="navbar animated" data-toggled='false'>
+    <div class="nav-name-container">
+      <a href="#já" class="link nav-name">Petr Dvořák</a>
     </div>
-  </header> -->
+    <button class="nav-mobile-toggle"></button>
+    <div class="nav-container">
+      <a href="#projekty" class="link nav-projects">Projekty</a>
+      <a href="#kontakty" class="link nav-footer">Kontakty</a>
+    </div>
+  </div>
 
-  <main class="main animated">
+  <main class="main animated" id="já">
     <article class="card">
       <div class="circle"></div>
       <div class="circle"></div>
@@ -95,7 +92,7 @@
 
   <div class="spacer layer1 animated"></div>
 
-  <div class="projekty animated">
+  <div class="projekty animated" id="projekty">
     <section class="features">
 
       <article class="feature">
@@ -133,7 +130,7 @@
     </section>
   </div>
 
-  <footer class="footer animated">
+  <footer class="footer animated" id="kontakty">
     <div class="contact-container">
       <div class="kontakty">kontakty</div>
       <h1>Napište mi</h1>

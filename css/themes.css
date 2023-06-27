@@ -24,77 +24,7 @@
   --yellow: #fff565;
 }
 
-/* Témata */
-.light {
-  --white: white;
-  --black: rgb(0, 0, 0);
-  --pink: rgb(255, 255, 255);
-  --name: rgb(0, 0, 0);
-
-  --text: rgb(0, 0, 0);
-  --border-color: rgba(255, 0, 0, 0);
-  --linear1: rgb(255, 255, 255);
-  --bg: rgb(123, 123, 126);
-  --bg-sec: rgb(220, 219, 219);
-  --box-shadow: rgba(0, 0, 0, 0.3);
-
-  --navbar-text: var(--gray3);
-
-  --circle-linear: rgb(44, 43, 43), rgb(255, 255, 255);
-
-  --svg-waves: url(../SVG/layered-waves-haikei.svg);
-}
-
-
-.dark {
-  --white: white;
-  --black: rgb(0, 0, 0);
-  --pink: rgb(0, 0, 0);
-  --name: rgb(255, 255, 255);
-
-  --text: rgb(255, 255, 255);
-  --border-color: rgba(255, 255, 255, 0);
-  --linear1: black;
-  --bg: rgba(66, 65, 65, 0.5);
-  --bg-sec: rgb(37, 37, 37);
-  --box-shadow: rgba(255, 255, 255, 0.15);
-
-  --navbar-text: var(--gray3);
-  --circle-linear: rgb(163, 159, 159), rgb(255, 255, 255);
-
-  --svg-waves: url(../SVG/layered-waves-dark.svg);
-}
-
-.blue {
-  --white: white;
-  --black: rgb(255, 255, 255);
-  --pink: rgb(74, 163, 222);
-  --name: rgb(255, 255, 255);
-
-  --text: rgb(255, 255, 255);
-  --border-color: rgba(255, 0, 0, 0);
-  --linear1: rgb(30, 46, 151);
-  --bg: rgba(96, 111, 204, 0.5);
-  --bg-sec: rgb(52, 61, 114);
-  --box-shadow: rgba(129, 211, 243, 0.25);
-
-  --navbar-text: var(--gray6);
-
-  --circle-linear: rgb(221, 223, 235), rgb(28, 76, 207);
-
-  --svg-waves: url(../SVG/layered-waves-blue.svg);
-}
-
-
-#dark::before {
-  background: #2a2e35;
-}
-
-#light::before {
-  background: #ffffff;
-}
-
-.new {
+.theme {
   --white: white;
   --black: rgb(0, 0, 0);
 
@@ -105,7 +35,7 @@
   --features-border: linear-gradient(to bottom,#007da700, #007EA7, rgba(255, 0, 255, 0));
   --project-bg: #00171F;
   --box-shadow: rgba(167, 168, 168, 0.151);
-  --arrpw-shadow: rgba(167, 168, 168, 0.151);
+  --arrow-shadow: rgba(216, 233, 240, 0.158);
 
   --navbar-text: rgb(184, 189, 192);
   --navbar-hover: rgb(254, 255, 255);
@@ -114,5 +44,5 @@
 
   --contact-bg: #17171A;
 
-  --svg-waves: url(../SVG/new.svg);
+  --svg-waves: url(../SVG/waves.svg);
 }
