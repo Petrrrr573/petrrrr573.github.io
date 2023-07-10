@@ -39,3 +39,16 @@ window.addEventListener("DOMContentLoaded", ()=>{
     },1000);
   })
 });
+
+function getLanguage() {
+  const language = navigator.language || navigator.userLanguage;
+
+  if (language === "cs-CZ" || language === "cs" || language === "sk") {
+    window.location.href = "cz.html";
+  }
+  else {
+    window.location.href = "en.html";
+  }
+};
+
+getLanguage();
