@@ -164,11 +164,11 @@ p {
     transform: translate(-10%, -100%);
   }
   .project:nth-child(even) h1 {
-    transform: translate(-185%, -100%);
+    transform: translate(-240%, -100%);
   }
 
   .project:nth-child(2) h1 {
-    transform: translate(-60%, -100%);
+    transform: translate(-92%, -100%);
   }
 
   .project:nth-child(even) {
