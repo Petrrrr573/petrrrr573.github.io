@@ -40,3 +40,41 @@ window.addEventListener("click", function(e){
     r: 20 + "px",
   }, {duration: 100, fill: "forwards" });
 });
+
+
+const ifIsMobile = { // detect the mobile devices
+  Android: function() {
+      return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function() {
+      return (ifIsMobile.Android() || ifIsMobile.BlackBerry() || ifIsMobile.iOS() || ifIsMobile.Opera() || ifIsMobile.Windows());
+}};
+
+
+
+
+const loadMobileCss = () => { // add the link tag to load mobilestyles.css
+                const linke = document.createElement("link");
+                linke.rel = "stylesheet";
+                linke.href = "mobilestyles.css";
+                document.getElementsByTagName("head")[0].appendChild(linke);
+            }
+
+
+ if (ifIsMobile.any()) {
+  cursor.style.display = "none";  
+  var elementToChange = document.getElementsByTagName("body")[0];
+  elementToChange.style.cursor = "default";
+}
