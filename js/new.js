@@ -32,11 +32,11 @@ document.addEventListener("mousemove", MouseAction);
 const largerCircle = document.getElementById("largerCircle");
 window.addEventListener("click", function(e){
   largerCircle.animate({
-    stroke: "#000",
+    opacity: 0,
     r: 40 + "px",
   }, { duration: 100, fill: "forwards" });
   largerCircle.animate({
-    stroke: "#fff",
+    opacity: 1,
     r: 20 + "px",
-  }, {delay: 125, duration: 100, fill: "forwards" });
+  }, {duration: 100, fill: "forwards" });
 });
