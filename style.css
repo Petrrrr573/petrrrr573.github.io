@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 body {
@@ -34,6 +35,10 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--primary);
+}
+
+nav>ul>li {
+  align-content: end;
 }
 
 nav a h3 {
@@ -117,6 +122,7 @@ main {
 
 .languages {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -126,15 +132,21 @@ main .languages {
   font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
 }
 
+main .languages .card-language img {
+  width: 3rem;
+}
+
 .card-language {
   display: flex;
   border: 1px solid var(--primary);
-  border-radius: 7px;
+  border-radius: 14px;
 
   align-items: center;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 1rem;
   gap: 0.25rem;
   width: max-content;
+
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 .separator {
@@ -143,8 +155,13 @@ main .languages {
   border-right: 1px solid var(--primary-darker);
 }
 
-.prjects span {
+.card-language>p {
+  color: var(--primary);
+}
+
+.projects span {
   font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  margin-right: 1rem;
 }
 
 .projects a{
@@ -154,17 +171,39 @@ main .languages {
 }
 
 .project-card {
-  display: flex;
   border-top: 1px solid var(--primary);
   border-bottom: 1px solid var(--primary);
-
   padding: 1rem 0;
   margin-top: 0.5rem;
-  justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  grid-template-rows: fit-content(0);
+  column-gap: 1rem;
+}
+
+.project-left .card-language {
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+.project-left .card-language img {
+  width: 1.875rem;
+}
+
+.project-card>img {
+  height: 100%;
+  max-width: 100%;
+
+  justify-self: end;
 }
 
 .project-left h3 {
   font-size: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+}
+
+.project-left>.languages {
+  margin: 0.5rem 0;
 }
 
 .project-left .languages .card-language p {
@@ -173,11 +212,12 @@ main .languages {
 
 .project-left>p {
   font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  margin-bottom: 2.125rem;
 }
 
 .project-btns {
   display: flex;
-  gap: 3.75rem;
+  gap: 1.5rem;
   
   margin-top: 2.25rem;
   align-items: center;
@@ -188,8 +228,17 @@ main .languages {
   font-size: 1.25rem;
 }
 
-.project-card svg path {
-  fill: var(--secondary);
+.more-btn {
+  padding: 0.375rem 1rem;
+}
+
+.github-btn {
+  padding: 0.1875rem 0.875rem;
+}
+
+.more-btn, .github-btn {
+  border: 1px solid var(--primary);
+  border-radius: 7px;
 }
 
 .github-btn p {
@@ -200,14 +249,12 @@ main .languages {
   width: 1.5rem;
 }
 
-.more-btn, .github-btn {
-  border: 1px solid var(--primary);
-  border-radius: 7px;
-  padding: 0.5rem 1.25rem;
-}
-
 .more-btn {
   border-color: var(--secondary);
+}
+
+.project-card svg path {
+  fill: var(--secondary);
 }
 
 .contact {
@@ -225,6 +272,7 @@ main .languages {
 
 .contact-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 4.5rem;
 
   margin-top: 3rem;
