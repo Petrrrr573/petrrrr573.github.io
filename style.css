@@ -55,6 +55,19 @@ nav ul {
   gap: 4rem;
 }
 
+nav button {
+  text-decoration: none;
+  border: none;
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 10%;
+  background: url(svg/hamburgerMenu.svg);
+  /* background-repeat: no-repeat; */
+  width: 24px;
+  height: 24px;
+}
+
 
 .active-nav{
   position: relative;
@@ -261,7 +274,7 @@ main .languages .card-language img {
 }
 
 .contact {
-  margin-top: 12.5rem;
+  margin: 12.5rem 0;
 }
 
 .contact h2 {
@@ -294,8 +307,31 @@ main .languages .card-language img {
   width: clamp(1.625rem, 1.512rem + 0.563vw, 2.188rem);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 907px) {
   nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  nav button {
+    display: block;
+  }
+
+  nav button {
+    display: block;
+    background: url(svg/close.svg);
+  }
+
+  .navbar[toggled="false"] {
+    button {
+      background: url(svg/hamburgerMenu.svg);
+    }
+    ul {
+      opacity: 0;
+    }
+  }
+
+  .contact-links {
+    display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
