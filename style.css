@@ -36,11 +36,20 @@ nav a {
   color: var(--primary);
 }
 
+nav a h3 {
+  font-size: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
+}
+
+nav ul li a {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 4rem;
 }
+
 
 .active-nav{
   position: relative;
@@ -57,8 +66,13 @@ nav ul {
   bottom: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 1.2rem + 4vw, 6rem);
+}
+
 h2 {
   color: var(--text);
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 
 main {
@@ -84,12 +98,17 @@ main {
   background-color: var(--secondary);
   padding: 0.5rem 1.25rem;
   border-radius: 7px;
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
 }
 
 .about-btn, .more-btn, .github-btn {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+.about-btn p {
+  font-size: clamp(1.125rem, 0.9rem + 1.125vw, 2.25rem);
 }
 
 .about-btn svg path {
@@ -104,6 +123,7 @@ main {
 main .languages {
   margin-top: 9rem;
   margin-bottom: 12.5rem;
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
 }
 
 .card-language {
@@ -123,9 +143,14 @@ main .languages {
   border-right: 1px solid var(--primary-darker);
 }
 
+.prjects span {
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+}
+
 .projects a{
   text-decoration: none;
   color: var(--secondary);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 .project-card {
@@ -138,21 +163,37 @@ main .languages {
   justify-content: space-between;
 }
 
+.project-left h3 {
+  font-size: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+}
 
-.project-card svg path {
-  fill: var(--secondary);
+.project-left .languages .card-language p {
+  font-size: clamp(0.938rem, 0.875rem + 0.313vw, 1.25rem);
+}
+
+.project-left>p {
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 
 .project-btns {
   display: flex;
   gap: 3.75rem;
-
+  
   margin-top: 2.25rem;
   align-items: center;
 }
 
 .more-btn p {
   color: var(--secondary);
+  font-size: 1.25rem;
+}
+
+.project-card svg path {
+  fill: var(--secondary);
+}
+
+.github-btn p {
+  font-size: 1rem;
 }
 
 .github-btn img {
@@ -175,6 +216,11 @@ main .languages {
 
 .contact h2 {
   color: var(--primary);
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+}
+
+.contact>p {
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 
 .contact-links {
@@ -190,4 +236,9 @@ main .languages {
   text-decoration: none;
   gap: 1rem;
   color: var(--primary-darker);
+  font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+}
+
+.contact-links img {
+  width: clamp(1.625rem, 1.512rem + 0.563vw, 2.188rem);
 }
