@@ -250,6 +250,7 @@ main .languages .card-language img {
 
 .github-btn {
   padding: 0.1875rem 0.875rem;
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 .more-btn, .github-btn {
@@ -318,12 +319,12 @@ main .languages .card-language img {
 
   nav button {
     display: block;
-    background: url(svg/close.svg);
+    background-image: url(svg/close.svg);
   }
 
   .navbar[toggled="false"] {
     button {
-      background: url(svg/hamburgerMenu.svg);
+      background-image: url(svg/hamburgerMenu.svg);
     }
     ul {
       opacity: 0;
