@@ -255,10 +255,10 @@ main .languages .card-language img {
 }
 
 .image-container[image="worldGenerator"] {
-  background-image: url(svg/worldGenerator.png);
+  background-image: url(img/worldGenerator.png);
 }
 .image-container[image="raycaster"] {
-  background-image: url(svg/raycaster.png);
+  background-image: url(img/raycaster.png);
 }
 
 
