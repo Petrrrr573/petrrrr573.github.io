@@ -118,6 +118,17 @@ main {
   margin-top: 12.5rem;
 }
 
+.about-main {
+  p {
+    font-size: clamp(1.25rem, 1.184rem + 0.331vw, 1.5rem);
+  }
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  margin-bottom: 12.5rem;
+}
+
 .main-btns{
   display: flex;
   gap: clamp(1.75rem, 1.221rem + 2.645vw, 3.75rem);
@@ -128,7 +139,8 @@ main {
 
 .main-btns a, .main-btns a p, 
 .more-btn,.more-btn p,  
-.github-btn, .github-btn p {
+.github-btn, .github-btn p,
+.contact-btn {
   text-decoration: none;
   color: var(--primary);
 }
