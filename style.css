@@ -215,6 +215,11 @@ main .languages .card-language img {
   color: var(--primary);
 }
 
+.projects-page {
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
+}
+
 .projects span {
   font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
   margin-right: 1rem;
