@@ -413,6 +413,10 @@ main .languages .card-language img {
   main {
     margin-top: 6.5rem;
   }
+  .main-page, .projects-page, .contact-page {
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
+  }
 
   .contact-links {
     display: flex;
