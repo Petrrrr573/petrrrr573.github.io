@@ -18,7 +18,7 @@ body {
   color: var(--primary);
 }
 
-main, .projects, .contact{
+main, .projects, .contact, .languages{
   max-width: 1530px;
   width: 80%;
   margin: 0 auto;
@@ -241,15 +241,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-}
-
-main .languages {
+  
   margin-top: 9rem;
   margin-bottom: 12.5rem;
   font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
 }
 
-main .languages .card-language img {
+.languages .card-language img {
   width: clamp(1.5rem, 1.103rem + 1.983vw, 3rem);
 }
 
@@ -284,6 +282,12 @@ background-color: rgba(255, 255, 255, 0.02);
 .projects-page {
   margin-top: 12.5rem;
   margin-bottom: 12.5rem;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .projects span {
