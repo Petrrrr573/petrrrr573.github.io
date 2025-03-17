@@ -83,7 +83,7 @@ nav button {
   position: absolute;
   top: 2rem;
   right: 10%;
-  background: url(svg/hamburgerMenu.svg);
+  background-color: transparent;
   width: 24px;
   height: 24px;
 }
@@ -477,13 +477,39 @@ background-color: rgba(255, 255, 255, 0.02);
 
   nav button {
     display: block;
-    background-image: url(svg/close.svg);
+  }
+
+  .nav-btn svg line{
+    transition: 200ms;
+  }
+
+  .nav-btn svg line:nth-of-type(1){
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
+  .nav-btn svg line:nth-of-type(2){
+    opacity: 0;
+  }
+
+  .nav-btn svg line:nth-of-type(3){
+    transform: rotate(-45deg);
+    transform-origin: center;
   }
 
   .navbar[toggled="false"] {
-    button {
-      background-image: url(svg/hamburgerMenu.svg);
+    .nav-btn svg line:nth-of-type(1){
+      transform: translateY(-5px);
     }
+  
+    .nav-btn svg line:nth-of-type(2){
+      opacity: 1;
+    }
+  
+    .nav-btn svg line:nth-of-type(3){
+      transform: translateY(5px);
+    }
+
     ul {
       transform: translateX(200%);
     }
